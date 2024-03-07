@@ -1,0 +1,137 @@
+.container {
+  display: inline-block;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  max-width: 325px;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  padding: 19.5px 26px;
+  border-radius: 10px;
+
+  background: #f9f9f9;
+
+  border-collapse: collapse;
+
+  outline-offset: -1px;
+}
+
+.input--large {
+  width: 325px;
+  height: 56px;
+}
+
+.input--small {
+  width: 244px;
+  height: 40px;
+}
+
+/* .input:focus-within {
+  outline: 4px solid #e7dfff;
+}
+
+.input:hover {
+  outline: 4px solid #e7dfff;
+}
+
+.label:has(.input:disabled) .input {
+  background: #f9f9f9;
+} */
+
+.inputContainer:focus-within .input {
+  outline: 4px solid #e7dfff;
+  background-color: #ffffff;
+}
+
+.inputContainer:has(.input:disabled) .input {
+  background-color: #f9f9f9;
+  color: #a6a6a6;
+}
+
+.inputContainer:has(:focus-within) .button svg {
+  color: #724ce2;
+}
+
+.inputContainer:hover .button svg {
+  color: #724ce2;
+}
+
+.inputContainer .label:has(.input:disabled) .input {
+  background: #f9f9f9;
+}
+
+.button {
+  z-index: 2;
+  width: 50px;
+
+  border-radius: 10px;
+  background: inherit;
+  position: absolute;
+
+  right: 0px;
+}
+
+.button:hover {
+  color: #724ce2;
+}
+
+.button--small {
+  height: 39px;
+  width: 40px;
+}
+
+.button--small svg {
+  width: 16px;
+  height: 16px;
+}
+
+.button--large {
+  height: 56px;
+}
+
+/* .input:not(:disabled).input:hover ~ .button svg,
+.button:hover svg {
+  color: #724ce2;
+} */
+
+.label:has(.input:disabled) .input ~ .button,
+.label:has(.input:disabled) .input ~ .button svg {
+  cursor: default;
+  color: #a6a6a6;
+}
+
+.menuContainer {
+  max-width: 325px;
+
+  padding: 12px;
+  margin-top: 16px;
+
+  border-radius: 16px;
+  border: 1px;
+
+  background-color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu__item {
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+
+.menu__item:hover {
+  background: #f9f9f9;
+  cursor: pointer;
+}
