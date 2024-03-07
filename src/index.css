@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url(./fonts/GTWalsheimPro-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url(./fonts/GTWalsheimPro-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url(./fonts/GTWalsheimPro-Bold.woff2);
+  font-weight: 700;
+}
+
+* {
+  font-family: "GT Walsheim Pro";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input:disabled {
+  background-color: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
