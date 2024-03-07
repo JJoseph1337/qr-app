@@ -1,0 +1,64 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  width: 249px;
+}
+
+.label:focus-within .title {
+  color: #724ce2;
+}
+
+.label:has(.input:disabled) .title,
+.label:has(.input:disabled) .input {
+  color: #a6a6a6;
+}
+
+.title {
+  color: #5d5d5d;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.input {
+  padding: 12px 16px;
+  width: 249px;
+  height: 46px;
+
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+
+  color: #262626;
+}
+
+.input--error {
+  border: 1px solid #f54614;
+}
+
+.input::placeholder {
+  font-size: 15px;
+  color: #a6a6a6;
+}
+
+.input:not(:disabled, [class*="input--"]):hover {
+  border: 1px solid #cbcbcb;
+}
+
+.input:not(:disabled):focus-visible {
+  border: #724ce2 1px solid;
+}
+
+.caption {
+  color: #a6a6a6;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.caption--error {
+  color: #f54614;
+}
