@@ -1,12 +1,7 @@
 import "./App.css";
-import { DropdownInput } from "./components/dropdownInput/DropdownInput";
 
 function App() {
-  return (
-    <div className=".app">
-      <DropdownInput />
-    </div>
-  );
+  return <div className=".app"></div>;
 }
 
 export default App;

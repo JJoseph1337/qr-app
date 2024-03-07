@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px;
+
+  border-radius: 16px;
+  border: 1px;
+
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header:hover .button:not(:disabled).button svg {
+  color: #724ce2;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.title--disabled {
+  color: #a6a6a6;
+}
+
+.button {
+  background-color: inherit;
+}
+
+.button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.button:disabled {
+  color: #a6a6a6;
+}
+
+.description {
+}
