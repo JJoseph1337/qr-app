@@ -1,0 +1,70 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 1024px;
+  padding: 45px 40px;
+
+  background: #f9f9f9;
+
+  gap: 32px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile__image {
+  width: 120px;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.email {
+  font-size: 16px;
+  line-height: 18px;
+  color: #a6a6a6;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu__item > span {
+  color: #a6a6a6;
+}
+
+.submenu__item:last-child {
+}
+
+.submenu__item {
+}
+
+.exit {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 55px;
+  list-style-type: none;
+}

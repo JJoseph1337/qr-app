@@ -1,0 +1,39 @@
+.container {
+  width: 240px;
+  gap: 8px;
+  padding: 12px 16px;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  background: #f9f9f9;
+}
+
+.container:active {
+  background: #f1ecff;
+}
+
+.container:hover {
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.container--secondary,
+.container--secondary:hover {
+  background-color: inherit;
+}
+
+.container--secondary:hover .text--secondary {
+  color: #262626;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.text--secondary {
+  color: #a6a6a6;
+}
