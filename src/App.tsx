@@ -1,10 +1,16 @@
 import "./App.css";
-import { LeftBar } from "./components/leftBar/LeftBar";
+import PaymentString from "./components/paymentString/PaymentString";
 
 function App() {
   return (
     <div className="app">
-      <LeftBar />
+      <PaymentString
+        style="withdrawal"
+        isPending={true}
+        // review="negative"
+        // reviewText="Замечательный официант, всё очень..."
+        value={1230}
+      />
     </div>
   );
 }
