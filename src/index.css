@@ -16,6 +16,12 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(./fonts/SourceSansPro-Bold.otf);
+  font-weight: 700;
+}
+
 * {
   font-family: "GT Walsheim Pro";
   box-sizing: border-box;

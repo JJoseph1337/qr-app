@@ -1,16 +1,10 @@
 import "./App.css";
-import PaymentString from "./components/paymentString/PaymentString";
+import { Calendar } from "./components/calendar/Calendar";
 
 function App() {
   return (
     <div className="app">
-      <PaymentString
-        style="withdrawal"
-        isPending={true}
-        // review="negative"
-        // reviewText="Замечательный официант, всё очень..."
-        value={1230}
-      />
+      <Calendar state="days" type="doubleType" />
     </div>
   );
 }
