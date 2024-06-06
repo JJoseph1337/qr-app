@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, FC, PropsWithChildren } from "react";
 import { cn } from "../../helpers/cn";
 import { AddIcon } from "../../icons/AddIcon";
 import { MinusIcon } from "../../icons/MinusIcon";
@@ -8,7 +8,9 @@ interface AccordionProps {
   disabled?: boolean;
 }
 
-export const Accordion = ({ disabled }: AccordionProps) => {
+export const Accordion: FC<
+  PropsWithChildren<AccordionProps>
+> = ({ disabled, children }) => {
   const [isDescriptionOpen, setIsDescriptionOpen] =
     useState(false);
 
@@ -46,15 +48,7 @@ export const Accordion = ({ disabled }: AccordionProps) => {
             )}
           </button>
         </div>
-        {isDescriptionOpen && (
-          <p className={styles.description}>
-            Here’s some example text that may answer an FAQ
-            or give the user some helpful advice. A
-            wonderful serenity has taken possession of my
-            entire soul, like these sweet mornings of spring
-            which I enjoy with my whole heart.
-          </p>
-        )}
+        {isDescriptionOpen && children}
       </div>
     </div>
   );

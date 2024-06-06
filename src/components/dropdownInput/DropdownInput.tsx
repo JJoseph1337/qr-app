@@ -19,7 +19,8 @@ export interface DropdownInputProps
 }
 
 export const DropdownInput: FC<DropdownInputProps> = ({
-  size = "small", disabled = false
+  size = "small",
+  disabled = false,
 }: DropdownInputProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -58,7 +59,6 @@ export const DropdownInput: FC<DropdownInputProps> = ({
             ])}
             onClick={() => handleButtonClick()}
             disabled={disabled}
-            
           >
             {isMenuOpen ? <ArrowUp /> : <ArrowDown />}
           </button>
@@ -73,7 +73,9 @@ export const DropdownInput: FC<DropdownInputProps> = ({
             <li className={styles.menu__item}>
               Testiryem 2
             </li>
-            <li className={styles.menu__item}>Pykaem 3</li>
+            <li className={styles.menu__item}>
+              Testiryem 3
+            </li>
           </ul>
         </div>
       )}

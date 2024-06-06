@@ -1,16 +1,15 @@
+.calendarContainer {
+  display: flex;
+}
+
 .calendar {
   width: 400px;
+  padding: 24px;
 
   background-color: #eaeaea;
 
-  padding: 24px;
-
   border-radius: 12px;
   border: 1px solid #eaeaea;
-}
-
-.doubleTypeCalendar {
-  display: flex;
 }
 
 .calendar--left {
@@ -21,13 +20,10 @@
   border-radius: 0px 12px 12px 0px;
 }
 
-
-
 .calendar__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin-bottom: 24px;
 }
 
@@ -41,53 +37,49 @@
 
 .calendar__header h2 {
   display: inline;
+  margin: 0 auto;
 
   color: #262626;
-
   font-size: 18px;
   line-height: 32px;
-
-  margin: 0 auto;
 }
 
 .calendar__body {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  /* gap: 8px; */
 }
 
-.calendar__body--months {
+.calendar__body--4-grid-columns {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.day {
+.dayOfTheWeek {
   text-align: center;
+
   font-family: "Source Sans Pro";
   font-weight: 700;
-
   color: #a6a6a6;
-
   font-size: 13px;
   line-height: 22px;
 }
 
-.emptyDate {
-}
-
-.date,
-.month {
+.dayOfTheMonth,
+.month,
+.year {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: #262626;
-
-  /* width: 50px; */
   height: 48px;
 
+  color: #262626;
   font-size: 13px;
   line-height: 22px;
   font-weight: 500;
+}
+.dayOfTheMonth:hover,
+.month:hover,
+.year:hover {
+  cursor: pointer;
 }
 
 .date--grey {

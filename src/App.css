@@ -1,4 +1,11 @@
 .app {
   padding: 20px;
-  background-color: grey;
+}
+
+.name {
+  color: red;
+}
+
+.selectedDate {
+  background-color: aqua;
 }

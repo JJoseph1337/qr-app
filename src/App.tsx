@@ -1,10 +1,10 @@
 import "./App.css";
-import { Calendar } from "./components/calendar/Calendar";
+import { TheCalendar } from "./components/calendar/Calendar";
 
 function App() {
   return (
     <div className="app">
-      <Calendar state="days" type="doubleType" />
+      <TheCalendar calendarType="dualCalendar" />
     </div>
   );
 }
