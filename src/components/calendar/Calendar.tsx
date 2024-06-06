@@ -1,5 +1,5 @@
 import { FC, useMemo, useState } from "react";
-import { useCalendar } from "../hooks/useCalendar";
+import { useCalendar } from "../../hooks/useCalendar";
 import styles from "./TheCalendar.module.css";
 import { ArrowLeft } from "../../icons/ArrowLeft";
 import { ArrowRight } from "../../icons/ArrowRight";
